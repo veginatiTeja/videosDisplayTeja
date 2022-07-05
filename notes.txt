@@ -1,0 +1,48 @@
+How did you structure the app based on the requirements?
+
+
+-> Building these project using create-react-app it's best way to build single page applications in react
+-> It sets up building enviornment using latest javascript features
+-> create our folder structure for making react app 
+-> run the command in terminal npm install -g create-react-app 
+-> it installs all the necessary dependencies and packages will install and added package.json file
+->Any react app contains different modules like node_modules , public folder, src folder , package.json file etc
+->public folder contain all images, assets, icons
+->src folder contain all react components will render in the UI 
+-> first step follows the rule: Most React projects start with a src/ folder and one src/App.js file with an App component.
+   It's a function component which just renders JSX:
+-> A component is reusable and also composable means a component is child component to parent component
+->Inside App component we use videoList component 
+-src/
+--- App.js 
+--- components/ 
+          ---videoList.js 
+-Next the src/App.js file can import the videoList component and use it:
+-and videoList.js file we can export the videoList component 
+-I am using a class component that extends react component and render method return tha JSX and displayed in the ui 
+- videos data are maintained in the list of objects 
+- maintaining the state object whenever change in the objects
+-using setState method updating the ui and whenever state changes 
+- using select input element for maintain the list of videos
+-using React-player third party package we display the youtube videos and paths etc 
+-displaying the meta tags of videos 
+-so overall functionality is whenever option changes drop down in select box corresponding video is playing and meta data also displayed
+
+
+
+2) Did you use any library’s and why did you choose to use them?
+
+ReactJS itself is an example of a JavaScript library
+A JavaScript Library is a pre-written JavaScript file with some extremely useful code-snippets, objects, and functions so that we can reuse the functions, objects, and code-snippets to perform a common task.
+
+3) How long did it take you to complete the project?
+  I built a React project in less than a day for understanding and design the project
+
+4) Are there any limitations to your solution, what might cause it to fail in a real-world
+application?
+ one limitation there I am facing the issue 
+ according to search input video list is not updating
+ in the search bar searchInput is updating 
+
+ 5)How would you improve it if you had more time?
+ I would able to solve my search input limitation and adding some design and styling 
